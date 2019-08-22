@@ -93,3 +93,6 @@ object canelones{
 		energia -= 7
 	}
 }
+object jana{
+	
+}
