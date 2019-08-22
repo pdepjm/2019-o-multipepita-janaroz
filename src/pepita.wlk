@@ -41,6 +41,9 @@ object pepita {
 			self.vola(8)
 		}
 	}
+	method entrenar(entrenador){
+		entrenador.entrenar(self)
+	}
 }
 
 object alpiste {
@@ -93,6 +96,12 @@ object canelones{
 		energia -= 7
 	}
 }
-object jana{
+object roque{
+		method entrenar(ave){
+		ave.vola(10)
+		ave.come(alpiste)
+		ave.vola(5)
+		ave.haceLoQueQuieras()
+	}
 	
 }
