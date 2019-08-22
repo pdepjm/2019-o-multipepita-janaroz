@@ -30,6 +30,17 @@ object pepita {
 		self.come(comida)
 		self.vola(comida.distanciaPepita())
 	}
+	method energia(){
+		return energia
+	}
+	method haceLoQueQuieras(){
+		if (self.estaCansada()){
+			self.come(alpiste)
+		}
+		else if (self.estaFeliz()){
+			self.vola(8)
+		}
+	}
 }
 
 object alpiste {
@@ -51,4 +62,34 @@ object manzana {
 	method energiaQueOtorga() { 
 		return 50
 	}	
+}
+object mijo {
+	var energia = 0
+	method energiaQueOtorga(){
+		return energia
+	}
+	method mojado(){
+		energia = 15
+	}
+	method secarse(){
+		energia = 20
+	}
+}
+object canelones{
+	var energia = 20
+	method energiaQueOtorga(){
+		return energia
+	}
+	method agregarQueso(){
+		energia += 7
+	}
+	method agregarSalsa(){
+		energia += 5
+	}
+	method sacarSalsa(){
+		energia -= 5
+	}
+	method sacarQueso(){
+		energia -= 7
+	}
 }
